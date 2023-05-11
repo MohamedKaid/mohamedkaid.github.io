@@ -164,7 +164,7 @@ b{
     width: 100%;
     float: left;
     padding: 20px;
-    z-index: 5;
+    z-index: 7;
 }
 
 /* .imgbacksplash{
@@ -258,16 +258,17 @@ a{
     margin-right: 20px;
 }
 
-.home_child0:first-child::after{
+.home_child0:first-child:after{
     position: absolute;
     content: '';
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
     right: 2%;
-    bottom: 20%;
+    bottom: 1%;
     background: linear-gradient(35deg,var(--second-color),var(--fourth-color));
-    animation: move-right 4s linear infinite;
+    z-index: auto;
+    animation: move-right3 4s linear infinite;
 }
 
 @keyframes move-right3 {
@@ -281,7 +282,6 @@ a{
         transform: translateX(0);
       }
   }  
-
 
 
 
@@ -420,22 +420,6 @@ button:hover{
 }
   
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
