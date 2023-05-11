@@ -1,0 +1,40 @@
+/* bule and gray */
+:root {
+    --first-color: #abbafb;
+    --second-color: #dfe3ff;
+    --third-color: #0f1b36;
+    --fourth-color: #76777c;
+    --fifth-color: #e2e2e2;
+    --sixth-color: #000000;
+  }
+
+
+  /* purple and viol  */
+  :root {
+    --first-color: #191825;
+    --second-color: #865DFF;
+    --third-color: #E384FF;
+    --fourth-color: #FFA3FD;
+    --fifth-color: #ffffff;
+    --sixth-color: #000000;
+  }
+
+  /* purple 90s */
+  :root {
+    --first-color: #a28089;
+    --second-color: #8458B3;
+    --third-color: #d0bdf4;
+    --fourth-color: #e5eaf5;
+    --fifth-color: #a0d2eb;
+    --sixth-color: #000000;
+  }
+
+  /* blue and tan, sand  */
+  :root {
+    --first-color: #e1b382;
+    --second-color: #c89666;
+    --third-color: #2d545e;
+    --fourth-color: #12343b;
+    --fifth-color: #ffffff;
+    --sixth-color: #000000;
+  }
