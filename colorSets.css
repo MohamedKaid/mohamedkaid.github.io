@@ -1,10 +1,10 @@
 /* bule and gray */
 :root {
-    --first-color: #abbafb;
-    --second-color: #dfe3ff;
-    --third-color: #0f1b36;
-    --fourth-color: #76777c;
-    --fifth-color: #e2e2e2;
+    --first-color: #8b8c89;
+    --second-color: #a3cef1;
+    --third-color: #6096ba;
+    --fourth-color: #274c77;
+    --fifth-color: #e7ecef;
     --sixth-color: #000000;
   }
 
@@ -36,5 +36,24 @@
     --third-color: #2d545e;
     --fourth-color: #12343b;
     --fifth-color: #ffffff;
+    --sixth-color: #000000;
+  }
+
+  /* Red & Gray  */
+  :root {
+    --first-color: #d80032;
+    --second-color: #ef233c;
+    --third-color: #edf2f4;
+    --fourth-color: #8d99ae;
+    --fifth-color: #2b2d42;
+    --sixth-color: #000000;
+  }
+
+  :root {
+    --first-color: #2ec4b6;
+    --second-color: #cbf3f0;
+    --third-color: #ffffff;
+    --fourth-color: #ffbf69;
+    --fifth-color: #ff9f1c;
     --sixth-color: #000000;
   }
