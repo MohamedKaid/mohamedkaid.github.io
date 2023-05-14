@@ -311,14 +311,44 @@ a{
 /* right Side */
 
 
-.profile_pic img{
-    position: relative;
-    top: 100px;
-    right: -100px;
-    width: 250px;
+.profile_pic img {
+    width: 100px;
     height: auto;
-    border-radius: 45%;
+}
+
+#java{
+    position: relative;
+    top: 10px;
+    right: -50px;
     animation: animate 10s ease infinite;
+}
+
+#Cplus{
+    position: relative;
+    top: 10px;
+    left: -50px;
+    animation: move-right_logo 6s ease infinite;
+}
+
+#C{
+    position: relative;
+    top: 10px;
+    right: -50px;
+    animation: move-right2 6s ease infinite;
+}
+
+#git{
+    position: relative;
+    top: 10px;
+    left: -50px;
+    animation: animate 6s ease infinite;
+}
+
+#html{
+    position: relative;
+    top: 10px;
+    right: -50px;
+    animation: move-right_logo 9s ease infinite;
 }
 
 @keyframes animate {
@@ -333,6 +363,29 @@ a{
     }
   }
 
+  @keyframes move-right_logo {
+    0%{
+      transform: translateX(0);
+    }
+    50% {
+      transform: translate(20px,-20px);
+    }
+    100%{
+        transform: translateX(0);
+      }
+  }
+
+  @keyframes move-right2 {
+    0%{
+      transform: translateX(0);
+    }
+    50% {
+      transform: translate(-20px,-20px);
+    }
+    100%{
+        transform: translateX(0);
+      }
+  }  
 
 .about-child1 .pLogo{
     display: flex;
