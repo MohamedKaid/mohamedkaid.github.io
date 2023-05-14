@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap');
 
 :root {
-    --first-color: #d90429;
-    --second-color: #ef233c;
-    --third-color: #edf2f4;
-    --fourth-color: #8d99ae;
-    --fifth-color: #2b2d42;
+    --first-color: #191825;
+    --second-color: #865DFF;
+    --third-color: #E384FF;
+    --fourth-color: #FFA3FD;
+    --fifth-color: #ffffff;
     --sixth-color: #000000;
   }
 
@@ -361,6 +361,7 @@ a{
 .project{
     overflow: auto;
 }
+
 ul {
     list-style: none;
     display: flex;
@@ -371,6 +372,7 @@ ul {
 }
   
 li {
+    display: inline;
     text-align: center;  
 }
 
@@ -385,8 +387,8 @@ a {
 img {
     display: block;
     margin: 0 auto;
-    width: 400px;
-    height: 200px;
+    width: 300px;
+    height: 175px;
 }
   
 h3 {
