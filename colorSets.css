@@ -57,3 +57,13 @@
     --fifth-color: #ff9f1c;
     --sixth-color: #000000;
   }
+
+  /* Royal Blue and Peach */
+  :root {
+    --first-color: #191825;
+    --second-color: #475053;
+    --third-color: #E384FF;
+    --fourth-color: #FFA3FD;
+    --fifth-color: #ffffff;
+    --sixth-color: #000000;
+  }
