@@ -31,7 +31,7 @@
         position: absolute;
         width: 40px;
         height: 40px;
-        background-color: linear-gradient(35deg,var(--fourth-color),var(--second-color)); 
+        background: linear-gradient(35deg,var(--fourth-color),var(--second-color)); 
         border-radius: 50%;
         pointer-events: none;
         transform-style: preserve-3d; /* Enable 3D transformations */
@@ -182,7 +182,7 @@
         width: 90%;
         font-size: 23px;
         font-weight: 600;
-        color: var(--fifth-color);
+        color: var(--sixth-color);
     }
 
     .home_child0 .btn{

@@ -1,4 +1,3 @@
-// your-script.js
 
 document.addEventListener('DOMContentLoaded', function() {
     // Function to create a 3D floating object
