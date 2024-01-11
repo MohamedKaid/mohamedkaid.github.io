@@ -26,6 +26,17 @@
         text-transform: capitalize;
     }
     
+    /* Floating Objects */
+    .floating-object {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: linear-gradient(35deg,var(--fourth-color),var(--second-color)); 
+        border-radius: 50%;
+        pointer-events: none;
+        transform-style: preserve-3d; /* Enable 3D transformations */
+        transform: translateZ(0); /* Ensure proper rendering in some browsers */
+    }
 
 
     /* Navigation Bar */
@@ -109,54 +120,6 @@
         background-repeat: no-repeat;
         background-size: cover; */
     }
-
-    .home-container::before{
-        position: absolute;
-        content: '';
-        height: 600px;
-        width: 600px;
-        border-radius: 50%;
-        left: -8%;
-        top: 40%;
-        background: linear-gradient(35deg,var(--second-color),var(--fourth-color));
-        animation: move-right 3s linear infinite;
-    }
-
-    .home-container::after{
-        position: absolute;
-        content: '';
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
-        left: 45%;
-        top: 15%;
-        background: linear-gradient(35deg,var(--fourth-color),var(--second-color));
-        animation: move-right2 4s linear infinite;
-    }
-
-    @keyframes move-right {
-        0%{
-        transform: translateX(0);
-        }
-        50% {
-        transform: translateX(20px);
-        }
-        100%{
-            transform: translateX(0);
-        }
-    }  
-
-    @keyframes move-right2 {
-        0%{
-        transform: translateX(0);
-        }
-        50% {
-        transform: translate(-20px,-20px);
-        }
-        100%{
-            transform: translateX(0);
-        }
-    }  
 
     /* conatiner child left side */
 
@@ -252,37 +215,6 @@
         color: var(--sixth-color);
     }
 
-
-    /*Right side moving Circle*/
-
-    .home_child0:first-child {
-        margin-right: 20px;
-    }
-
-    .home_child0:first-child:after{
-        position: absolute;
-        content: '';
-        height: 300px;
-        width: 300px;
-        border-radius: 50%;
-        right: 2%;
-        bottom: 1%;
-        background: linear-gradient(35deg,var(--second-color),var(--fourth-color));
-        z-index: auto;
-        animation: move-right3 4s linear infinite;
-    }
-
-    @keyframes move-right3 {
-        0%{
-        transform: translateX(0);
-        }
-        50% {
-        transform: translate(20px,-20px);
-        }
-        100%{
-            transform: translateX(0);
-        }
-    }  
 
 
 
