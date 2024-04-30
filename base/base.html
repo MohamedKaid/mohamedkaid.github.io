@@ -1,0 +1,22 @@
+<!-- base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Default Title{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <!-- Common header content goes here -->
+    </header>
+
+    <main>
+        {% block content %}Hello Wrld{% endblock %}
+    </main>
+
+    <footer>
+        <!-- Common footer content goes here -->
+    </footer>
+</body>
+</html>
