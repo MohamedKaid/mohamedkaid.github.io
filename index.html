@@ -32,8 +32,34 @@
                     <br><span class="topline">Hello, I'm Mohamed Kaid</span>
                     <h1>I'm a <span class="multiText"></span></h1>
                     <br><br><p>Im a software developer</p>
-                    <div class="btn">
+                    <!-- <div class="btn">
                         <button><a href="../files/MKaid_Resume.pdf" target="_blank">View CV</a></button>
+                    </div> -->
+                    <!-- From Uiverse.io by Na3ar-17 --> 
+                    <div class="btn">
+                        <label class="label">
+                        <input type="checkbox" class="input" />
+                        <span class="circle"
+                            ><svg
+                            class="icon"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            >
+                            <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="1.5"
+                                d="M12 19V5m0 14-4-4m4 4 4-4"
+                            ></path>
+                            </svg>
+                            <div class="square"></div>
+                        </span>
+                        <p class="title">Download CV</p>
+                        <a href="../files/MKaid_Resume.pdf" target="_blank"class="title">Open</a>
+                        </label>
                     </div>
                 </div>
             </div>
@@ -51,6 +77,29 @@
         loop : true,
         typeSpeed: 140,
     })
+
+        document.addEventListener("DOMContentLoaded", function () {
+        const openLink = document.querySelector(".label a.title");
+        const checkbox = document.querySelector(".label .input");
+
+        openLink.addEventListener("click", function (event) {
+            // Optionally prevent default link behavior initially
+            event.preventDefault(); 
+            
+            // Trigger the download
+            const downloadLink = openLink.getAttribute("href");
+            const downloadElement = document.createElement("a");
+            downloadElement.href = downloadLink;
+            downloadElement.download = downloadLink.split('/').pop(); // Suggest filename for download
+            downloadElement.click();
+
+            // After triggering the download, uncheck the checkbox
+            setTimeout(function () {
+                checkbox.checked = false; // Unchecks the checkbox after a short delay
+            }, 100); // Delay to ensure download is triggered first
+        });
+    });
+
     </script>
     
 </body>
