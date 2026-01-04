@@ -59,7 +59,7 @@ nav {
     justify-content: space-around;
     line-height: 70px;
     z-index: 1000;
-    background: rgba(255, 163, 253, 0.9);
+    background: rgba(255, 163, 253, 0.85);
     backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
@@ -203,7 +203,7 @@ b {
         cursor: pointer;
         font-size: 15px;
         font-weight: 600;
-        color: var(--sixth-color);
+        color: var(--second-color);
         background-color: var(--second-color);
         padding: 8px 14px;
         margin: 40px 5px;
