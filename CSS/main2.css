@@ -613,6 +613,24 @@ a {
     animation: float-around 9s infinite linear;
 }
 
+#js {
+    bottom: 25%;
+    right: 10%;
+    animation: float-around 8s infinite linear;
+}
+
+#python3 {
+    top: 35%;
+    left: 15%;
+    animation: float-around 11s infinite linear;
+}
+
+#swiftui {
+    bottom: 15%;
+    left: 30%;
+    animation: float-around 13s infinite linear;
+}
+
 @keyframes float-around {
     0% {
         transform: translate(0, 0) rotate(0deg);
