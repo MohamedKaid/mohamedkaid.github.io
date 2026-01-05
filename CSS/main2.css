@@ -456,7 +456,7 @@ a {
 /* AboutPage Modern Styling */
 .about-container.glass {
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(100px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     margin: 40px auto;
@@ -490,7 +490,7 @@ a {
 .lead-text {
     font-size: 1.2rem !important;
     margin-bottom: 20px;
-    color: var(--second-color) !important;
+    color: var(--third-color) !important;
 }
 
 .about-text p {
