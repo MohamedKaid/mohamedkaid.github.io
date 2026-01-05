@@ -614,13 +614,13 @@ a {
 }
 
 #js {
-    bottom: 25%;
-    right: 10%;
+    top: 0;
+    left: 15%;
     animation: float-around 8s infinite linear;
 }
 
 #python3 {
-    top: 35%;
+    top: 25%;
     left: 15%;
     animation: float-around 11s infinite reverse;
 }
