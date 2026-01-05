@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap');
 
 :root {
-    --first-color: #e1b382;
-    --second-color: #c89666;
-    --third-color: #2d545e;
-    --fourth-color: #12343b;
+    --first-color: #191825;
+    --second-color: #475053;
+    --third-color: #E384FF;
+    --fourth-color: #FFA3FD;
     --fifth-color: #ffffff;
     --sixth-color: #000000;
   }
@@ -837,6 +837,189 @@ button:hover {
 }
 
 
+/* =========================================================
+   PHONE VERSION (add at bottom of main2.css)
+   - Doesn’t change desktop/tablet styling
+   - Only overrides on small screens
+   ========================================================= */
+@media (max-width: 600px) {
+
+  /* stop horizontal scroll on phones */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  /* ---------- NAV ---------- */
+  nav {
+    height: auto;                 /* allow wrapping */
+    line-height: normal;          /* don’t force 70px line height */
+    padding: 12px 14px;
+    gap: 10px;
+    flex-wrap: wrap;              /* allow items to go to next line */
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+
+  b {
+    font-size: 34px;
+  }
+
+  .navItem {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navItem ul {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .navItem li {
+    margin: 0 8px;
+  }
+
+  .navItem li a {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .socal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    padding-top: 6px;
+  }
+
+  .socal a {
+    font-size: 24px;
+    margin-left: 0;
+  }
+
+  /* ---------- HOME ---------- */
+  .home-container {
+    padding: 26px 16px;
+    min-height: calc(100vh - 70px);
+    align-items: flex-start;      /* feels better on small screens */
+  }
+
+  .home-child {
+    padding: 10px 0;
+  }
+
+  .home_child0 .topline {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .home_child0 .topline::after {
+    width: 32px;
+    bottom: 6px;
+  }
+
+  .home_child0 h1 {
+    font-size: clamp(2.3rem, 9vw, 3.2rem);
+    line-height: 1.1;
+  }
+
+  .home_child0 p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .home_child0 .btn {
+    justify-content: flex-start;
+    margin-top: 14px;
+  }
+
+  /* your download label button */
+  .label {
+    width: min(220px, 90vw);
+  }
+  .label .title {
+    font-size: 14px;
+    right: 14px;
+    bottom: 12px;
+  }
+
+  /* ---------- ABOUT ---------- */
+  .about-container.glass {
+    margin: 18px 12px;
+    border-radius: 16px;
+  }
+
+  .about-content {
+    padding: 18px;
+    gap: 22px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .lead-text {
+    font-size: 1.05rem !important;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr; /* stack cards */
+  }
+
+  /* orbit scales down so it fits */
+  .tech-orbit {
+    width: 240px;
+    height: 240px;
+  }
+
+  .center-circle {
+    width: 90px;
+    height: 90px;
+    font-size: 2.4rem;
+  }
+
+  .orbit-icon {
+    width: 44px !important;
+    height: 44px !important;
+    padding: 6px;
+  }
+
+  /* ---------- PROJECTS ---------- */
+  .project-container.glass {
+    padding: 30px 16px;
+    margin: 18px 12px;
+    border-radius: 18px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .project-img-wrapper {
+    height: 180px;
+  }
+
+  .project-info h3 {
+    font-size: 1.25rem;
+  }
+
+  .project-info p {
+    font-size: 0.95rem;
+  }
+
+  .project-container .btn button {
+    width: 100%;
+    max-width: 360px;
+    padding: 14px 18px;
+  }
+}
 
 
 
