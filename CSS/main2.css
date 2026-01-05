@@ -240,7 +240,7 @@ b {
 
 .label {
     background-color: transparent;
-    border: 2px solid rgb(91, 91, 240);
+    border: 2px solid var(--third-color);
     display: flex;
     color: #000000;
     align-items: center;
@@ -292,7 +292,7 @@ b {
     height: 45px;
     width: 45px;
     border-radius: 50%;
-    background-color: rgb(91, 91, 240);
+    background-color: var(--third-color);
     display: flex;
     justify-content: center;
     align-items: center;
