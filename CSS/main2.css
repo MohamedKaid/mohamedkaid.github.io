@@ -622,13 +622,13 @@ a {
 #python3 {
     top: 35%;
     left: 15%;
-    animation: float-around 11s infinite linear;
+    animation: float-around 11s infinite reverse;
 }
 
 #swiftui {
     bottom: 15%;
     left: 30%;
-    animation: float-around 13s infinite linear;
+    animation: float-around 13s infinite linear reverse;
 }
 
 @keyframes float-around {
