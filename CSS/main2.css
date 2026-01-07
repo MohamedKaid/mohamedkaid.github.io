@@ -17,7 +17,7 @@
 }
 
 body {
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
     background: #fcfcfc;
     min-height: 100vh;
@@ -453,7 +453,7 @@ a {
 
 
 
-/* AboutPage Modern Styling */
+/* AboutPage Styling */
 .about-container.glass {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(100px);
@@ -490,7 +490,7 @@ a {
 .lead-text {
     font-size: 1.2rem !important;
     margin-bottom: 20px;
-    color: var(--third-color) !important;
+    color: var(--second-color) !important;
 }
 
 .about-text p {
@@ -668,7 +668,14 @@ a {
     }
 }
 
-/* Projects Page Modern Styling */
+/* Projects Page Styling */
+.project-body {
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #fcfcfc;
+    min-height: 100vh;
+}
+
 .project-container.glass {
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(20px);
