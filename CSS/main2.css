@@ -453,7 +453,7 @@ a {
 
 
 
-/* AboutPage Styling */
+/* AboutPage Modern Styling */
 .about-container.glass {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(100px);
@@ -490,7 +490,7 @@ a {
 .lead-text {
     font-size: 1.2rem !important;
     margin-bottom: 20px;
-    color: var(--second-color) !important;
+    color: var(--third-color) !important;
 }
 
 .about-text p {
@@ -669,6 +669,7 @@ a {
 }
 
 /* Projects Page Styling */
+
 .project-body {
     overflow-y: auto;
     overflow-x: hidden;
