@@ -946,6 +946,69 @@ button:hover {
     margin-top: 14px;
   }
 
+
+
+  /* ===== Mobile dropdown nav ===== */
+.nav-toggle {
+  display: none; /* hidden on desktop */
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* hamburger lines */
+.nav-toggle span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  margin: 6px 0;
+  background: #fff; /* change if your nav is light */
+  border-radius: 2px;
+}
+
+/* Phone-only behavior */
+@media (max-width: 600px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  /* Hide the nav links by default on phones */
+  .navItem ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 0;
+    margin: 10px 0 0 0;
+  }
+
+  /* When open, show them */
+  nav.nav-open .navItem ul {
+    display: flex;
+  }
+
+  /* Optional: also tuck socials into the dropdown */
+  .socal {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    gap: 14px;
+    padding: 10px 0 0;
+  }
+
+  nav.nav-open .socal {
+    display: flex;
+  }
+
+  /* Make each link easier to tap */
+  .navItem li a {
+    display: inline-block;
+    padding: 10px 12px;
+  }
+}
+
+
   /* your download label button */
   .label {
     width: min(220px, 90vw);
