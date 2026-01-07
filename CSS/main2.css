@@ -846,10 +846,30 @@ button:hover {
 
 
 /* =========================================================
-   PHONE VERSION (add at bottom of main2.css)
+   PHONE VERSION (clean + dropdown)
    - Doesn’t change desktop/tablet styling
    - Only overrides on small screens
    ========================================================= */
+
+/* Dropdown button hidden on desktop by default */
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* hamburger lines */
+.nav-toggle span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  margin: 6px 0;
+  background: #fff; /* change if needed */
+  border-radius: 2px;
+}
+
 @media (max-width: 600px) {
 
   /* stop horizontal scroll on phones */
@@ -859,12 +879,13 @@ button:hover {
 
   /* ---------- NAV ---------- */
   nav {
-    height: auto;                 /* allow wrapping */
-    line-height: normal;          /* don’t force 70px line height */
+    height: auto;
+    line-height: normal;
     padding: 12px 14px;
     gap: 10px;
-    flex-wrap: wrap;              /* allow items to go to next line */
+    flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
   }
 
   .logo {
@@ -876,33 +897,54 @@ button:hover {
     font-size: 34px;
   }
 
-  .navItem {
-    width: 100%;
-    justify-content: center;
+  /* show hamburger on phone */
+  .nav-toggle {
+    display: block;
   }
 
-  .navItem ul {
+  /* nav container takes full width under logo row */
+  .navItem {
     width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+  }
+
+  /* IMPORTANT: hide menu by default on phone */
+  .navItem ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0 0;
+    margin: 10px 0 0;
+  }
+
+  /* show menu when nav has .nav-open */
+  nav.nav-open .navItem ul {
+    display: flex;
   }
 
   .navItem li {
-    margin: 0 8px;
+    margin: 0;
   }
 
   .navItem li a {
     font-size: 16px;
     letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 12px;
   }
 
+  /* socials: optional inside dropdown */
   .socal {
+    display: none;
     width: 100%;
-    display: flex;
     justify-content: center;
     gap: 14px;
-    padding-top: 6px;
+    padding-top: 10px;
+  }
+
+  nav.nav-open .socal {
+    display: flex;
   }
 
   .socal a {
@@ -914,7 +956,7 @@ button:hover {
   .home-container {
     padding: 26px 16px;
     min-height: calc(100vh - 70px);
-    align-items: flex-start;      /* feels better on small screens */
+    align-items: flex-start;
   }
 
   .home-child {
@@ -947,69 +989,6 @@ button:hover {
     margin-top: 14px;
   }
 
-
-
-  /* ===== Mobile dropdown nav ===== */
-.nav-toggle {
-  display: none; /* hidden on desktop */
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-  padding: 10px;
-}
-
-/* hamburger lines */
-.nav-toggle span {
-  display: block;
-  width: 26px;
-  height: 2px;
-  margin: 6px 0;
-  background: #fff; /* change if your nav is light */
-  border-radius: 2px;
-}
-
-/* Phone-only behavior */
-@media (max-width: 600px) {
-  .nav-toggle {
-    display: block;
-  }
-
-  /* Hide the nav links by default on phones */
-  .navItem ul {
-    display: none;
-    width: 100%;
-    flex-direction: column;
-    gap: 12px;
-    padding: 12px 0;
-    margin: 10px 0 0 0;
-  }
-
-  /* When open, show them */
-  nav.nav-open .navItem ul {
-    display: flex;
-  }
-
-  /* Optional: also tuck socials into the dropdown */
-  .socal {
-    display: none;
-    width: 100%;
-    justify-content: center;
-    gap: 14px;
-    padding: 10px 0 0;
-  }
-
-  nav.nav-open .socal {
-    display: flex;
-  }
-
-  /* Make each link easier to tap */
-  .navItem li a {
-    display: inline-block;
-    padding: 10px 12px;
-  }
-}
-
-
   /* your download label button */
   .label {
     width: min(220px, 90vw);
@@ -1040,10 +1019,9 @@ button:hover {
   }
 
   .skills-grid {
-    grid-template-columns: 1fr; /* stack cards */
+    grid-template-columns: 1fr;
   }
 
-  /* orbit scales down so it fits */
   .tech-orbit {
     width: 240px;
     height: 240px;
@@ -1091,6 +1069,7 @@ button:hover {
     padding: 14px 18px;
   }
 }
+
 
 
 
