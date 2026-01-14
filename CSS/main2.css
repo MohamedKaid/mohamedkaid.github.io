@@ -454,6 +454,13 @@ a {
 
 
 /* AboutPage Modern Styling */
+.about-body {
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #fcfcfc;
+    min-height: 100vh;
+}
+
 .about-container.glass {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(100px);
