@@ -67,3 +67,148 @@
     --fifth-color: #ffffff;
     --sixth-color: #000000;
   }
+
+
+  /* Ocean Deep */
+  :root {
+    --first-color: #12100E;
+    --second-color: #3B3024;
+    --third-color: #E3A820;
+    --fourth-color: #FFD97D;
+    --fifth-color: #ffffff;
+    --sixth-color: #000000;
+  }
+ 
+  /* Forest Mist */
+  :root {
+    --first-color: #1A1F16;
+    --second-color: #3D5A3E;
+    --third-color: #84E39A;
+    --fourth-color: #C8FFD4;
+    --fifth-color: #ffffff;
+    --sixth-color: #000000;
+  }
+
+  /* Sunset Ember */
+  :root {
+    --first-color: #1C1410;
+    --second-color: #5C3D2E;
+    --third-color: #FF7043;
+    --fourth-color: #FFB199;
+    --fifth-color: #ffffff;
+    --sixth-color: #000000;
+  }
+
+
+  /* Cosmic Gold */
+  :root {
+    --first-color: #12100E;
+    --second-color: #3B3024;
+    --third-color: #E3A820;
+    --fourth-color: #FFD97D;
+    --fifth-color: #ffffff;
+    --sixth-color: #000000;
+  }
+
+  /* Berry Crush */
+  :root {
+    --first-color: #1A0A0A;
+    --second-color: #5C2D3D;
+    --third-color: #FF4D6D;
+    --fourth-color: #FFB3C1;
+    --fifth-color: #ffffff;
+    --sixth-color: #000000;
+  }
+
+  /* Arctic  */
+  :root {
+    --first-color: #0A0F14;
+    --second-color: #2E4057;
+    --third-color: #48CAE4;
+    --fourth-color: #ADE8F4;
+    --fifth-color: #ffffff;
+    --sixth-color: #000000;
+  }
+
+
+  /* Citrus Burn */
+  :root {
+    --first-color: #14100A;
+    --second-color: #4A3520;
+    --third-color: #FF9A3C;
+    --fourth-color: #FFD4A3;
+    --fifth-color: #ffffff;
+    --sixth-color: #000000;
+  }
+
+
+  /* Cherry Blossom */
+  :root {
+    --first-color: #1A0F14;
+    --second-color: #4D2E40;
+    --third-color: #FF84B7;
+    --fourth-color: #FFD6EB;
+    --fifth-color: #ffffff;
+    --sixth-color: #000000;
+  }
+
+  /* Neon Tide */
+  :root {
+    --first-color: #071A1A;
+    --second-color: #0D4D4D;
+    --third-color: #00F5D4;
+    --fourth-color: #A3FFF0;
+    --fifth-color: #ffffff;
+    --sixth-color: #000000;
+  }
+
+  /* Mystic Violet */
+  :root {
+    --first-color: #0F0A1A;
+    --second-color: #3B2D5C;
+    --third-color: #9B5DE5;
+    --fourth-color: #D4AAFF;
+    --fifth-color: #ffffff;
+    --sixth-color: #000000;
+  }
+
+  /* Midnight Blue */
+  :root {
+    --first-color: #080D1A;
+    --second-color: #1E2D5C;
+    --third-color: #4D79FF;
+    --fourth-color: #A3BAFF;
+    --fifth-color: #ffffff;
+    --sixth-color: #000000;
+}
+
+/* Lava Rock */
+:root {
+    --first-color: #120A08;
+    --second-color: #4A2018;
+    --third-color: #E85D04;
+    --fourth-color: #FFBA85;
+    --fifth-color: #ffffff;
+    --sixth-color: #000000;
+}
+
+
+/* Steel Blue Haze */
+:root {
+    --first-color: #0A1014;
+    --second-color: #2A3D4A;
+    --third-color: #52B2CF;
+    --fourth-color: #B8E4F0;
+    --fifth-color: #ffffff;
+    --sixth-color: #000000;
+}
+
+/* Golden Dusk */
+:root {
+    --first-color: #14120A;
+    --second-color: #4A4020;
+    --third-color: #F4C430;
+    --fourth-color: #FFF0A3;
+    --fifth-color: #ffffff;
+    --sixth-color: #000000;
+}
