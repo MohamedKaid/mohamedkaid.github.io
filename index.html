@@ -82,44 +82,37 @@
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
+  // Animated text
+  var typingEffect = new Typed(".multiText", {
+    strings: ["FullStack Dev!", "Gamer!", "Family Man!"],
+    loop: true,
+    typeSpeed: 140,
+  });
+  document.querySelector('.multiText').style.fontSize = 'clamp(2.5rem, 8vw, 6rem)';
 
-    // script for the animated text
-        var typingEffect = new Typed(".multiText",{
-        strings : ["FullStack Dev!","Gamer!", "Family Man!"],
-        loop : true,
-        typeSpeed: 140,
-        size: 100,
-    })
-    // change the font size for the .multiText 
-    document.querySelector('.multiText').style.fontSize = 'clamp(2.5rem, 8vw, 6rem)';
+  // Download button reset
+  document.addEventListener("DOMContentLoaded", function () {
+    const openLink = document.querySelector(".label a.title");
+    const checkbox = document.querySelector(".label .input");
 
-    //function to make the download button reset after being downlaoded
-        document.addEventListener("DOMContentLoaded", function () {
-        const openLink = document.querySelector(".label a.title");
-        const checkbox = document.querySelector(".label .input");
+    openLink.addEventListener("click", function (event) {
+      event.preventDefault();
 
-        openLink.addEventListener("click", function (event) {
-            // Optionally prevent default link behavior initially
-            event.preventDefault(); 
-            
-            // Trigger the download
-            const downloadLink = openLink.getAttribute("href");
-            const downloadElement = document.createElement("a");
-            downloadElement.href = downloadLink;
-            downloadElement.download = downloadLink.split('/').pop(); // Suggest filename for download
-            downloadElement.click();
-            
+      const downloadElement = document.createElement("a");
+      downloadElement.href = openLink.getAttribute("href");
+      downloadElement.download = openLink.getAttribute("href").split('/').pop();
+      downloadElement.target = "_blank";
 
-            // After triggering the download, uncheck the checkbox
-            setTimeout(function () {
-                checkbox.checked = false; // Unchecks the checkbox after a short delay
-            }, 15); // Delay to ensure download is triggered first
+      document.body.appendChild(downloadElement);  // ✅ Must append before clicking
+      downloadElement.click();
+      document.body.removeChild(downloadElement);  // ✅ Remove after click, not before
 
-            document.body.removeChild(downloadElement)
-        });
+      setTimeout(function () {
+        checkbox.checked = false;
+      }, 300); // ✅ Give browser time to initiate the download
     });
-
-    </script>
+  });
+</script>
     
 </body>
 </html>
